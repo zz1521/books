@@ -1,0 +1,42 @@
+.mui-row{
+	background: #ffff;
+}
+
+.icons{
+	background-image: url(../../images/icons/sprite@2x.f5569.png);
+    background-size: 87px 87px;
+}
+
+.category-row{
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	background: #FFFFFF;
+}
+
+.category-blok{
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.category{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.category img{
+	width: 35px;
+	height: 35px;
+}
+
+.category span{
+	color: #8f8f94;
+	display: block;
+	line-height: 12px;
+	font-size: 15px;
+}
+.book-author {
+    line-height: 2rem;
+}

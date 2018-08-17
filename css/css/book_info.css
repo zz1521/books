@@ -1,0 +1,64 @@
+.mui-table-view .mui-media-object{
+	width: 5.5rem;
+    height: 6.5rem;
+    max-width: 88px;
+}
+
+.book-author {
+    line-height: 3rem;
+    font-size: 15px;
+}
+
+.book-author span{
+	margin-left:5px;
+	margin-right:2.5px;
+}
+
+.mui-bar-tab{
+	height: 55px;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+    background: #ffffff;
+    color: #ed424b;
+}
+
+.mui-bar-tab .mui-tab-item{
+	color: #ed424b;
+	background: #FFFFFF;
+}
+
+.mui-bar{
+	-webkit-box-shadow: 0 0 0px rgba(0,0,0,.85); 
+    box-shadow: 0 0 0px rgba(0,0,0,.85); 
+}
+
+.desc{
+	padding: 15px;
+	background: #fff;
+}
+
+.desc-p{
+	font-size: 15.5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #8f8f94;
+}
+
+.book-mulu{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.zxzj{
+	/*float: left;*/
+	margin-left: 20px;
+	margin-right: 18px;
+	font-size: 15.5px;
+	color: #8f8f94;
+}
+
+.new_list .mui-table-view-cell{
+	font-size: 15px;
+	color: #8f8f94;
+}

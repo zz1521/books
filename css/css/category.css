@@ -1,0 +1,26 @@
+.category{
+	float: left;
+	width: 100%;
+}
+.category_row{
+	width: 100%;
+	/*padding: 25px;*/
+	float: left;
+}
+
+.category-blok{
+	width: 33.33%;
+	height: 90px;
+	border: 1px solid #efeff4;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+	background: #FFFFFF;
+}
+
+.number{
+	display: block;
+    font-size: 14px;
+    color: #979797;
+    margin: 3px;
+}

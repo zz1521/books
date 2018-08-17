@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+    	<link rel="stylesheet" href="css/css/login.css" />
+    	<link rel="stylesheet" href="css/iconfont.css" />
+    	<link rel="stylesheet" type="text/css" href="js/plugin/verify/css/verify.css">
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">注册</h1>
+		</header>
+		
+		<div class="mui-content">
+		    <div class="mui-content mui-input-group" id="one" style="display: block;">
+	            <form id="login-form">
+					<div class="login_photo">
+						<img id="logo-img" src="images/system/logo-icon.png">
+					</div>
+					<div style="margin: 5% 0"></div>
+					<div class="mui-input-row" >
+						<label><span class="mui-icon mui-icon-email"></span></label>
+	                        <input id="account" name="account" type="text" class="mui-input-clear mui-input input" placeholder="请输入您的邮箱">
+					</div>
+					<div class="mui-input-row">
+						<label><span class="mui-icon mui-icon-locked" ></span></label>
+	                     <input id="password" name="password" type="password" class="mui-input mui-input-password input" placeholder="请设置密码 最低6位">
+					</div>
+					<div class="mui-input-row">
+						<label><span class="mui-icon mui-icon-locked" ></span></label>
+	                     <input id="password2" name="password2" type="password" class="mui-input mui-input-password input" placeholder="请重复密码">
+					</div>
+	                
+	                <div class="login_but">
+						<!--<button id="submit" type="button" class="mui-btn mui-btn-block mui-btn-primary">下一步</button>-->             	
+						<div id="verify" ></div>
+	                </div>
+	                
+				</form>
+				<div class="login_other" style="margin: 10% 0;padding:0;">
+					<div class="mui-content-padded">           
+						<div class="link-area" style="padding: 0" >
+							<a id="login" style="color: #ed424b;">已有账号？去登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="mui-content mui-input-group"  id="two" style="display: none;">
+	            <form id="code-form">
+					<div class="login_photo">
+						<img id="logo-img1" src="images/system/logo-icon.png">
+					</div>
+					<div style="margin: 5% 0"></div>
+					<div class="mui-input-row" >
+						<label><span class="mui-icon mui-icon-email"></span></label>
+	                        <input style="width: 59%; float: left;" id="code" name="code" type="text" class="mui-input input" placeholder="请登录邮箱查看验证码">
+							<input class="send-but" type="button" name="send" id="send" value="重新发送"  style="width: 20%; float: left; background: #ed424b; color: #FFFFFF;text-align: center;padding: 0 1px;height: 40px;border-radius: 5px;"/>
+					</div>
+	                
+	                <div class="login_but">
+						<button id="submit" type="button" class="mui-btn mui-btn-block mui-btn-primary">立即注册</button> 
+	                </div>
+	                
+				</form>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/utils/function.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script> 
+		<script type="text/javascript" src="js/plugin/verify/js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/plugin/verify/js/verify.js"></script>
+		<script src="js/script/reg.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

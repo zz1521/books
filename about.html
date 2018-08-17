@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>about</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" href="css/css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/css/about.css"/>
+    	<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">关于我们</h1>
+		</header>
+		
+			<div class="login_content">
+			<div class="mui-content mui-input-group">
+                <form id="login-form">
+					<div class="login_photo">
+						<img id="login-img" src="images/system/logo-icon.png">
+						<div>
+							<span>当前版本：<span id="version">1.0.0</span></span>
+						</div>
+					</div>
+					<div style="margin: 5% 0"></div>
+					
+                    <div class="my-list">
+                    	<ul class="mui-table-view">
+						    <li class="mui-table-view-cell" id="syxy">
+						        <a class="mui-navigate-right">使用协议</a>
+						    </li>
+						     <li class="mui-table-view-cell" id="mzsm">
+						        <a class="mui-navigate-right">免责声明</a>
+						    </li>
+						    <li class="mui-table-view-cell" id="rjbb">
+						        <a class="mui-navigate">检查新版本
+						        	<span id="version_span" style="float: right; color: red;">已是最新版</span>
+						        </a>
+						    </li>
+						</ul>
+                    </div>
+				</form>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/plugin/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script/about.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

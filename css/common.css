@@ -1,0 +1,105 @@
+.mui-bar-nav {
+    top: 0;
+    -webkit-box-shadow: 0 0px 0px #ccc;
+    box-shadow: 0 0px 0px #ccc;
+}
+
+.mui-bar{
+	background-color: #ed424b;
+}
+
+.mui-title{
+	color: #FFFFFF;
+	/*font-family:"bodoni mt black"*/
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.no-more{
+	font-size: 14px;
+	color: #8f8f94;
+	margin: 10px;
+	text-align: center;
+}
+
+.jiange{
+	/*background: #efeff4;*/
+	margin: 10px 0;
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 12px;
+}
+
+.jiange div{
+	float: left;
+    width: 2px;
+    height: 20px;
+    background: #ed424b;
+    margin-right: 10px;
+}
+
+
+.mui-table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 17px 15px;
+    -webkit-touch-callout: none;
+}
+
+.mui-table-view-cell>a:not(.mui-btn){
+	margin: -17px -15px;
+}
+
+.book-img-icon{
+	width: 20px;
+	height: 20px;
+}
+
+.iconfont {
+	font-size:23px;
+	color: #ed424b;
+}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear.mui-active, .mui-input-row .mui-input-password~.mui-icon-eye.mui-active, .mui-input-row .mui-input-speech~.mui-icon-speech.mui-active{
+	color: #ed424b;
+}
+
+.mui-popup.mui-popup-in{
+	width: 75%;
+}
+
+.mui-popup-title{
+	color: #797979;
+}
+
+.mui-popup-inner{
+	position: relative;
+    padding: 15px;
+    border-radius: 13px 13px 0 0;
+    background: #FFFFFF;
+}
+
+.mui-popup-input input{
+	height: 44px;
+	border-radius: 5px;
+	color: #797979;
+	font-size: 15px;
+	/*border: 1px solid #ed424b;*/
+	margin: 10px 0;
+}
+
+.mui-popup-button{
+	color: #979797;
+}
+
+.mui-popup-button-bold{
+	color: #ed424b;
+}
+
+.layui-m-layerbtn span, .layui-m-layerchild h3{
+	margin-top: 0px;
+}

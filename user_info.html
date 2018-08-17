@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/bookIcon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css/me.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css/user_info.css"/>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人设置</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="book-head">
+		    	<div class="book-user">
+		    		<div class="head-img">
+		    			<div id="head_img">
+			    			<img src="images/images/head-img.jpg" id="user_head_img_s" />
+			    			<div class="user-nickname">
+				    			<span>点击更换头像</span>
+				    		</div>
+			    		</div>
+		    		</div>
+		    	</div>
+		    </div>
+		   
+		    <div class="info-list">
+		    	<ul class="mui-table-view">
+		    		<li class="mui-table-view-cell" >
+				       	修改昵称
+				         <span id="user_nickname_s">映月书友/span>
+				    </li>
+				</ul>
+				
+		    </div>
+		</div>	
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/function.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugin/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script/user_info.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				beforeback: function(){
+					var me = plus.webview.getWebviewById('me.html');
+					mui.fire(me,'refresh');
+					return true;
+				}
+			})
+		</script>
+	</body>
+
+</html>

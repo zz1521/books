@@ -1,0 +1,22 @@
+.mui-table-view .mui-media-object{
+	width: 4.8rem;
+    height: 5.5rem;
+    max-width: 75px;
+}
+
+.book-name{
+	font-size: 1rem;
+}
+
+.book-author{
+	line-height: 2.6rem;
+}
+
+.book-time{
+	margin-top: -64px;
+	float: right;
+}
+
+.iconfont{
+	font-size: 17px;
+}

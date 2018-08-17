@@ -1,0 +1,59 @@
+		body{
+			font-size: 15px;
+			color: #979797;
+			font-family: "微软雅黑";
+			background-color: #fff;
+		}
+		.mui-btn-primary,
+		.mui-btn-blue {
+			color: #fff;
+			border: 1px solid #3b579d;
+			background-color: #3b579d;
+			margin-left: 5%;
+			width: 90%;
+    		height: 44px;
+		}
+		.two {
+			border: solid 1px #3b579d; 
+			background-color: #fff;
+			color: #3b579d;
+		}
+		
+		.login_content label {
+			font-size: 16px;
+			color: #000000;
+		}
+		
+		.mui-input-row label~input {
+			font-size: 15px;
+			color: #979797;
+		}
+		
+		.mui-input-row label~input,
+		.mui-input-row label~select,
+		.mui-input-row label~textarea {
+			float: left;
+			width: 52%;
+			margin-bottom: 0;
+			padding-left: 0;
+			border: 0;
+		}
+		.mui-input-group .mui-input-row:after {
+   
+	    left: 15px;
+	   
+	   
+	    right: 15px;
+	}
+	.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-speech~.mui-icon-speech, .mui-input-row .mui-input-password~.mui-icon-eye {
+	  
+	    right: 7px;
+	  
+	}
+	.spliter{
+		font-size: 13px;
+	    color: #656363;
+	    position: relative;
+	    top: -1px;
+	    left: 2px;
+	}

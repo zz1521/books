@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/bookIcon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css/book_info.css"/>
+		<style type="text/css">
+			/*.mui-navigate-right:after, .mui-push-right:after{
+				right: 15px;
+    			content: '\e403';
+    			font-size: 30px;
+			}*/
+			
+			.zxzj{
+				float: left;
+				margin-left: 28px;
+			}
+			.book-list-num{
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">目录</h1>
+		    <a id="sort" class="mui-icon iconfont icon-jiage mui-pull-right" style="color: #fff;"></a>
+		</header>
+		
+		<div class="mui-content">
+		    <div class="jiange">
+		    	<div></div>
+		    	正文卷
+		    </div>
+		    
+		    <div class="new_list">
+		    	<ul class="mui-table-view" id="list">
+			    </ul>
+		    </div>
+		    
+		    <div style="height: 55px;"></div>
+		    
+		    <nav class="mui-bar mui-bar-tab">
+		        <a class="mui-tab-item">
+		            <span class="mui-icon iconfont icon-huancun"></span>
+		            <span class="mui-tab-label">缓存前50章</span>
+		        </a>
+		        <a class="mui-tab-item">
+		            <span class="mui-icon iconfont icon-huancun"></span>
+		            <span class="mui-tab-label">缓存前100章</span>
+		        </a>
+		        <a class="mui-tab-item">
+		            <span class="mui-icon iconfont icon-huancun"></span>
+		            <span class="mui-tab-label">缓存全本</span>
+		        </a>
+		    </nav>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/utils/function.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script/chapter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

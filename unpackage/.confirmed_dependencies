@@ -1,0 +1,163 @@
+{
+  "index.html": {
+    "resources": [
+      "find.html",
+      "css/mui.min.css",
+      "css/iconfont.css",
+      "css/common.css",
+      "css/css/index.css",
+      "js/mui.min.js",
+      "js/utils/util.js",
+      "js/script/index.js",
+      "images/images/taichu.jpg",
+      "images/images/wxsj.jpg",
+      "/js/utils/md5.js"
+    ],
+    "refer": [
+      "find.html",
+      "me.html",
+      "discuss.html",
+      "search.html",
+      "login.html",
+      "book_content.html"
+    ]
+  },
+  "search.html": {
+    "refer": [
+      "search.html",
+      "book_info.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "css/common.css",
+      "css/css/index.css",
+      "css/css/find.css",
+      "css/css/search.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "js/script/search.js",
+      "images/images/taichu.jpg",
+      "images/images/wxsj.jpg",
+      "fonts/mui.ttf"
+    ]
+  },
+  "find.html": {
+    "href": "find.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/bookIcon.css",
+      "css/common.css",
+      "css/css/index.css",
+      "css/css/find.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "js/script/find.js",
+      "images/icons/fenlei.svg",
+      "images/icons/paihang.svg",
+      "images/icons/shu.svg",
+      "images/icons/dashen.svg",
+      "images/images/taichu.jpg",
+      "images/images/wxsj.jpg",
+      "images/images/lb3.jpg",
+      "images/images/lb1.jpg",
+      "images/images/lb2.jpg",
+      "fonts/bookIcon.ttf"
+    ],
+    "refer": [
+      "book_info.html",
+      "book_list.html",
+      "category.html"
+    ],
+    "priority": 0
+  },
+  "me.html": {
+    "href": "me.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/bookIcon.css",
+      "css/common.css",
+      "css/css/me.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "images/images/head-img.jpg",
+      "images/system/yyds.jpg",
+      "js/script/me.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "login.html",
+      "about.html",
+      "safety.html",
+      "user_info.html"
+    ],
+    "priority": 0
+  },
+  "login.html": {
+    "refer": [
+      "index.html",
+      "reg.html",
+      "forget.html"
+    ],
+    "resources": [
+      "/js/utils/md5.js"
+    ]
+  },
+  "welcome.html": {
+    "refer": [
+      "index.html"
+    ],
+    "resources": []
+  },
+  "reg.html": {
+    "refer": [
+      "reg.html"
+    ],
+    "resources": [
+      "/js/utils/md5.js"
+    ]
+  },
+  "about.html": {
+    "refer": [
+      "info.html"
+    ],
+    "resources": []
+  },
+  "safety.html": {
+    "refer": [
+      "change.html",
+      "change_mail.html"
+    ],
+    "resources": []
+  },
+  "user_info.html": {
+    "refer": [
+      "cropper.html",
+      "crop.html"
+    ],
+    "resources": []
+  },
+  "book_info.html": {
+    "refer": [
+      "chapter.html"
+    ],
+    "resources": []
+  },
+  "book_list.html": {
+    "refer": [
+      "book_info.html"
+    ],
+    "resources": []
+  },
+  "category.html": {
+    "refer": [
+      "book_list.html"
+    ],
+    "resources": []
+  },
+  "book_content.html": {
+    "resources": [
+      "data/Qe.epub"
+    ],
+    "refer": []
+  }
+}

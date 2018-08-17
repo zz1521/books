@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>登录</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/css/login.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">登录</h1>
+		<div id="lang" class="mui-pull-right  mui-icon iconfont icon-yingwen"></div>
+	</header>
+	<div class="mui-content">
+		<div class="mui-content mui-input-group">
+            <form id="login-form">
+				<div class="login_photo">
+					<img id="logo-img" src="images/system/logo-icon.png">
+				</div>
+				<div style="margin: 5% 0"></div>
+				<div class="mui-input-row" >
+					<label><span class="mui-icon mui-icon-email"></span></label>
+                        <input id="account" name="account" type="text" class="mui-input-clear mui-input input" placeholder="请输入您的登录邮箱">
+				</div>
+				<div class="mui-input-row">
+					<label><span class="mui-icon mui-icon-locked" ></span></label>
+                     <input id="password" name="password" type="password" class="mui-input mui-input-password input" placeholder="请输入密码">
+				</div>
+                
+                <div class="login_but">
+					<button id="login" type="button" class="mui-btn mui-btn-block mui-btn-primary">登录</button>             	
+					<button id="reg" type="button" class="mui-btn mui-btn-block mui-btn-primary two">注册</button>
+                </div>
+                
+			</form>
+			<div class="login_other" style="margin: 10% 0;padding:0;">
+				<div class="mui-content-padded">           
+					<div class="link-area" style="padding: 0" >
+						<a id="forgetPassword" style="color: #ed424b;">忘记密码</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <script type="text/javascript" charset="utf-8" src="js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/common.js"></script>
+    <script src="js/utils/function.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/script/login.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+    	document.addEventListener('plusready', function(){
+    		mui.init({
+				beforeback: function(){
+					var home = plus.webview.getLaunchWebview();
+					mui.fire(home,'login');
+					return true;
+				}
+			})
+    	}, false);
+    	
+    </script>
+</body>
+</html>

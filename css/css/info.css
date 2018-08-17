@@ -1,0 +1,14 @@
+body{
+	font-size: 16px;
+	color: #979797;
+	font-family: "微软雅黑";
+	background-color: #fff;
+}
+
+.content{
+	width:100%;
+	background-color: #FFFFFF;
+    padding: 15px;
+    word-wrap:break-word; 
+    word-break:break-all;
+}

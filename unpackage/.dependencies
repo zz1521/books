@@ -1,0 +1,78 @@
+{
+  "find.html": {
+    "href": "find.html",
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/bookIcon.css",
+      "fonts/bookIcon.ttf",
+      "css/common.css",
+      "css/css/index.css",
+      "css/css/find.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "js/script/find.js",
+      "images/icons/fenlei.svg",
+      "images/icons/paihang.svg",
+      "images/icons/shu.svg",
+      "images/icons/dashen.svg",
+      "images/images/taichu.jpg",
+      "images/images/wxsj.jpg",
+      "images/images/lb3.jpg",
+      "images/images/lb1.jpg",
+      "images/images/lb2.jpg"
+    ],
+    "priority": 0
+  },
+  "search.html": {
+    "href": "search.html",
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/common.css",
+      "css/css/index.css",
+      "css/css/find.css",
+      "css/css/search.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "js/script/search.js",
+      "images/images/taichu.jpg",
+      "images/images/wxsj.jpg"
+    ],
+    "priority": 1
+  },
+  "me.html": {
+    "href": "me.html",
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/bookIcon.css",
+      "fonts/bookIcon.ttf",
+      "css/common.css",
+      "css/css/me.css",
+      "images/system/header.jpg",
+      "js/mui.min.js",
+      "js/common.js",
+      "images/images/head-img.jpg"
+    ],
+    "priority": 2
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "css/css/index.css",
+      "js/mui.min.js",
+      "js/utils/util.js",
+      "js/script/index.js",
+      "images/images/taichu.jpg",
+      "images/images/wxsj.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}

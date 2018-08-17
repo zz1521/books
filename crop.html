@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/mui.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/cropper.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookIcon.css"/>
+		<script type="text/javascript" src="js/plugin/cropper/fastclick.js"></script>
+		<script type="text/javascript" src="js/plugin/cropper/exif.js"></script>
+		<link href="css/css/crop.css" rel="stylesheet" />
+		<style type="text/css">
+			.my-icon{
+				font-size: 26px; 
+				color: #FFFFFF;
+			}
+		</style>
+		<script>
+			window.addEventListener('load', function() {
+				FastClick.attach(document.body);
+			}, false);
+		</script>
+	</head>
+
+	<body>
+		<div id="cropper-example-1">
+			<img id="im" alt="Picture" style="height:100%;width:100%;">
+		</div>
+
+		<div class="divbut">
+			<div>
+				<p id="quxiao" class="my-icon mui-icon iconfont icon-quxiao my-icon"></p>
+			</div>
+			<div>
+				<p id="xuanqu" class="my-icon mui-icon iconfont icon-queding"></p>
+			</div>
+		</div>
+		<div id="test" style="position: absolute;"></div>
+	</body>
+	<script type="text/javascript" src="js/plugin/cropper/jquery-1.11.2.min.js"></script>
+	<script src="js/plugin/cropper/cropper.min.js"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/script/crop.js">
+		mui.init();
+	</script>
+
+</html>

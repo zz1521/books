@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+    	<link rel="stylesheet" type="text/css" href="css/bookIcon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css/book_info.css"/>
+		<style type="text/css">
+			.book-info .mui-table-view-cell>a:not(.mui-btn).mui-active {
+			    background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title" id="title">太初</h1>
+		</header>
+		<div class="mui-content">
+		     <div class="book-info">
+		     	<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" id="book-img" src="images/images/taichu.jpg">
+				            <div class="mui-media-body">
+				            	<span class="book-name" id="book-name">太初</span>    
+				                <p class='mui-ellipsis book-author' id="types">
+				                	<i class="mui-icon iconfont icon-leibie"></i>
+				                	<span>暂无</span>
+				                </p>
+				                <p class='mui-ellipsis book-time' id="is_end">连载中</p>
+				                <p class='mui-ellipsis'>
+				                	<i class="mui-icon iconfont icon-wode"></i>
+				                	<span id="book-author">高楼大厦</span>
+				                </p>
+				            </div>
+				        </a>
+				    </li>
+				</ul>
+		     </div>
+		     
+		     <div class="jiange">
+		     	<div></div>
+		     	简介
+		     </div>
+		     <div class="desc">
+		     	<div class="mui-collapse-content">
+	                <p class="desc-p" id="book-desc">暂无简介</p>
+	            </div>
+		     </div>
+		     
+		     <div class="book-mulu">
+		     	<ul class="mui-table-view">
+				    <li class="mui-table-view-cell" id="look_all_list">
+				        <a class="mui-navigate-right">
+				        	<i class="mui-icon mui-icon-bars"></i> 目录
+				        	<span class="zxzj" style="float: right; margin-right:28px;">更新至 第<span id="new_list">0</span>章</span>
+				        </a>
+				    </li>
+				    <div class="new_list">
+				    	<li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第1章
+				        	<span class="zxzj">大田金鳞元神出</span>
+				        </a>
+					    </li>
+				    	<li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第2章
+				        	<span class="zxzj">山中神仙选仙苗</span>
+				        </a>
+					    </li>
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第3章
+				        	<span class="zxzj">仙尊真乙太初教</span>
+				        </a>
+					    </li>
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第4章
+				        	<span class="zxzj">太初山中绝毒谷</span>
+				        </a>
+					    </li>
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第5章
+				        	<span class="zxzj">显灵台上鉴仙眼</span>
+				        </a>
+					    </li>
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第6章
+				        	<span class="zxzj">紫气东来惊仙鉴</span>
+				        </a>
+					    </li>
+					    
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第7章
+				        	<span class="zxzj">淡然明鉴道初心</span>
+				        </a>
+					    </li>
+					 
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第8章
+				        	<span class="zxzj">灵田谷中引灵种</span>
+				        </a>
+					    </li>
+					    
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第9章
+				        	<span class="zxzj">道心固来一炷香</span>
+				        </a>
+					    </li>
+					    
+					    <li class="mui-table-view-cell">
+					        <a class="mui-navigate-right">
+				        	第10章
+				        	<span class="zxzj">书中自有黄金屋</span>
+				        </a>
+					    </li>
+					    <div id="look_all">
+						    <div class="mui-table-view-cell" is_look_all='true' style="text-align: center;">
+						        <span>查看全部章节</span>
+						    </div>
+					    </div>
+				    </div>
+				</ul>
+		     </div>
+		     
+		     <div style="height: 55px;"></div>
+		     
+			<nav class="mui-bar mui-bar-tab">
+		        <a class="mui-tab-item">
+		            <span class="mui-icon iconfont icon-jia"></span>
+		            <span class="mui-tab-label">加入书架</span>
+		        </a>
+		        <a class="mui-tab-item">
+		            <span class="mui-icon iconfont icon-huancun"></span>
+		            <span class="mui-tab-label">缓存全本</span>
+		        </a>
+		        <a class="mui-tab-item">
+		            <span class="mui-icon iconfont icon-yuedu"></span>
+		            <span class="mui-tab-label">立即阅读</span>
+		        </a>
+		    </nav>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script/book_info.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
