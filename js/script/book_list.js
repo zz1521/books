@@ -63,7 +63,8 @@ window.onload = function(){
 			e_i.classList.add('mui-icon')
 			e_i.classList.add('iconfont')
 			if(type == 'master'){
-					e_i.classList.add('icon-huangguan');				
+					e_i.classList.add('icon-huangguan');	
+					e_i.setAttribute('style','color: #e9c872;');	
 			}else{
 					e_i.classList.add('icon-zuozhe1');
 			}

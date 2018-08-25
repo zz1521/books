@@ -70,21 +70,28 @@ mui.plusReady(function(){
     });
     
     document.getElementById("head_img").addEventListener('click',function(){
-		  //底部对话框
-		  layer.open({
-		    content: '请选择打开方式'
-		    ,btn: ['相册', '拍照']
-		    ,skin: 'footer'
-		    ,yes: function(index){
-		    	local();
-		    	layer.closeAll();
-		    }
-		    ,no:function(){
-		    	camera();
-		    	layer.closeAll();
-		    }
-		  });
-    });
+	  	var btnArray = [
+	  		{title: "拍照"}, 
+	  		{title: "从相册选择"}
+	  	];
+		plus.nativeUI.actionSheet({
+			title: "选择照片",
+			cancel: "取消",
+			buttons: btnArray
+		}, function(e) {
+			var index = e.index;
+			switch (index) {
+				case 0:
+					break;
+				case 1:
+					camera();//相机
+					break;
+				case 2:
+					local();//相册
+					break;
+			}
+		});
+	});
     
 	
 	//从相册选取

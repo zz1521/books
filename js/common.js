@@ -10,11 +10,23 @@ var port = 80;//端口
 
 var api = xy+domain+':'+port;//完整的api
 
-var tokenKey = 'yyds';//加密请求参数的token key
-
 var storage = window.localStorage;//localStorage对象
 
 var imgUrl = api+'/uploads/';
+
+var runtimePath = '_doc/runtime';
+
+//加密请求参数的token key
+var tokenKey = false;
+
+mui.ajax(api+'/Util/getTokenKey',{type:'get',
+	success:function(data){
+		tokenKey = data;
+	},
+	error:function(error){
+		mui.toast('网络异常，请检查网络后重试')
+	}
+});
 
 /*
  * 以下为app需要引入的通用文件 
@@ -32,10 +44,38 @@ head.appendChild(scr)
  */
 
 
+//检测网络环境
+function netWorkStatus(callback){
+	var nt = plus.networkinfo.getCurrentType();
+	switch (nt){
+		case plus.networkinfo.CONNECTION_ETHERNET:
+		case plus.networkinfo.CONNECTION_WIFI:
+			return {status:1,info:'wifi'};
+		break; 
+		case plus.networkinfo.CONNECTION_CELL2G:
+			return {status:2,info:'2G'};
+		break; 
+		case plus.networkinfo.CONNECTION_CELL3G:
+			return {status:3,info:'3G'};
+		break; 
+		case plus.networkinfo.CONNECTION_CELL4G:
+			return {status:4,info:'4G'};
+		break; 
+		default:
+			return {status:0,info:'none'};
+		break;
+	}
+}
+
+
 //加密参数函数
 var setData = function(data){
-	data['time'] =  String(Math.round(new Date() / 1000));
+	var netWork = netWorkStatus();
+	if(netWork.status==0){
+		return false;
+	}
 	
+	data['time'] =  String(Math.round(new Date() / 1000));
 	var token = '';
 	for (key in data) {
 		token += hex_md5(String(data[key]));
@@ -219,13 +259,13 @@ function loadWebViwe(){
 			return;
 		}
 
+		
 		//底部选项卡切换
 		util.toggleNview(currIndex);
 		// 子页面切换
 		util.changeSubpage(targetPage, activePage, aniShow);
 		//更新当前活跃的页面
 		activePage = targetPage;
-	
 	});
 
 

@@ -16,6 +16,22 @@ window.onload = function(){
 		  	showHead();
 		  	showNickname();
 		});
+		
+		document.getElementById("user_head_img_s").addEventListener('tap',function(e){
+  		var bitmap = new plus.nativeObj.Bitmap();
+			bitmap.loadBase64Data(getStorage('user').headImg, function(){
+				bitmap.save(runtimePath+'/images/'+Math.round(new Date())+'.png',{overwrite:true,format:'png',quality:50},function(event){
+					console.log(event.target);
+					plus.nativeUI.previewImage([event.target]);
+					bitmap.clear();
+				},function(error){
+					bitmap.clear();
+					console.log('Bitmap对象保存失败');
+				})
+			},function(error){
+					bitmap.clear();
+				});
+  	});
   	
   	//退出登录
     document.getElementById("out").addEventListener('tap',function(){

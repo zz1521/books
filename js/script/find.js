@@ -1,12 +1,11 @@
-window.onload = function(){
+//轮播数据
+var sliders = [
+	{id:1,book_id:1,img:'images/images/lb1.jpg',type:1,href:''},
+	{id:2,book_id:2,img:'images/images/lb2.jpg',type:2,href:'http://baidu.com/'},
+	{id:3,book_id:3,img:'images/images/lb3.jpg',type:3,href:'http://baidu.com/'}
+];
 
-	//轮播数据
-	var sliders = [
-		{id:1,book_id:1,img:'images/images/lb1.jpg'},
-		{id:2,book_id:2,img:'images/images/lb2.jpg'},
-		{id:3,book_id:3,img:'images/images/lb3.jpg'}
-	];
-	
+window.onload = function(){
 	//轮播渲染
 	var slider_list = document.getElementById("slider-list");
 	var indicator = document.getElementById("indicator");
@@ -81,11 +80,14 @@ window.onload = function(){
 	slider_list.appendChild(last_div);
 	
 	//开始轮播
-	var slider = mui("#slider");
-	slider.slider({
-		interval: 2000 //自动轮播周期，若为0则不自动播放，默认为0；
+	window.addEventListener('changeSubpage',function(event){
+	  	var slider = mui("#slider");
+		slider.slider({
+			interval: 2000
+		});	
 	});
-
+	
+	
 	//榜单列表数据
 	var res = [
 		{id:1,name:'太初',image:'images/images/taichu.jpg',types:['玄幻','修仙'],is_end:0,author:'高楼大厦',desc:'一树生的万朵花，天下道门是一家。法术千般变化，人心却亘古不变',new_list:'866',new_list_name:'去化心魔真仙轮【四更】'},
@@ -150,7 +152,6 @@ window.onload = function(){
 	
 	//5+事件
 	mui.plusReady(function(){
-		
 		//列表点击进入书籍详情页面
 		mui('.mui-table-view').on('tap','li',function(){
 			var index = this.getAttribute('data-index');
@@ -165,8 +166,20 @@ window.onload = function(){
 		//轮播点击
 		mui('#slider-list').on('tap','div',function(){
 			var book_id = this.getAttribute('data-book-id');
-			//根据ID发异步
-			//.....
+			var book_index = this.getAttribute('data-index');
+			
+			if(sliders[book_index].type == 2)//外部浏览器打开
+			{
+				plus.runtime.openURL(sliders[book_index].href);
+				return false;
+			}
+			else if(sliders[book_index].type == 3)//内部浏览器打开
+			{
+				plus.runtime.openWeb(sliders[book_index].href);
+				return false;
+			}
+			
+			//打开app内页面
 			var data = {id:1,name:'太初',image:'images/images/taichu.jpg',types:['玄幻','修仙'],is_end:0,author:'高楼大厦',desc:'一树生的万朵花，天下道门是一家。法术千般变化，人心却亘古不变',new_list:'866',new_list_name:'去化心魔真仙轮【四更】'};
 			mui.openWindow({
 				url:'book_info.html',

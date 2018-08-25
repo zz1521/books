@@ -28,6 +28,9 @@ window.onload = function(){
 
 		//点击登录
 		document.getElementById("login").addEventListener('tap',function(){
+			//阻止输入法软键盘弹出
+			document.activeElement.blur();
+		
 			var account = document.getElementById("account").value;
 			if(!account){
 					mui.toast('请输入登录邮箱');

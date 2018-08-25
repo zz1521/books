@@ -56,6 +56,7 @@ var util = {
 	 * 点击切换tab窗口 
 	 */
 	changeSubpage: function(targetPage, activePage, aniShow) {
+		
 		//若为iOS平台或非首次显示，则直接显示
 		if(mui.os.ios || aniShow[targetPage]) {
 			plus.webview.show(targetPage);
@@ -70,6 +71,9 @@ var util = {
 		if(activePage !== plus.webview.getLaunchWebview()) {
 			plus.webview.hide(activePage);
 		}
+		
+		var detailPage = plus.webview.getWebviewById(targetPage.id);
+		mui.fire(detailPage,'changeSubpage',{targetPage:targetPage,activePage:activePage,aniShow:aniShow});
 	},
 	/**
 	 * 点击重绘底部tab （view控件）
@@ -91,6 +95,8 @@ var util = {
 	 * 改变颜色
 	 */
 	changeColor: function(obj, color) {
+		console.log(JSON.stringify(obj))
+		console.log(color)
 		obj.color = color;
 		return obj;
 	},
